@@ -7,7 +7,9 @@
 //
 
 #import "MKAppDelegate.h"
-#import "MKMainViewController.h"
+#import "MKTabViewController.h"
+#import "MKAccViewController.h"
+#import "MKServerMasterViewController.h"
 
 @implementation MKAppDelegate
 
@@ -17,7 +19,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     NSError *error = nil;
     NSURL *modelURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"ManiaPlanetAlerts" ofType:@"momd"]];
-    // NOTE: Due to an iOS 5 bug, the managed object model returned is immutable.
+
     NSManagedObjectModel *managedObjectModel = [[[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL] mutableCopy];
     RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:managedObjectModel];
     
@@ -32,12 +34,51 @@
     // Set the default store shared instance
     [RKManagedObjectStore setDefaultStore:managedObjectStore];
     
+    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"https://ws.maniaplanet.com"]];
+    objectManager.managedObjectStore = managedObjectStore;
+    [objectManager.HTTPClient setAuthorizationHeaderWithUsername:@"diablohorse|diablo23q" password:@"msuobjc"];
+    
+    [RKObjectManager setSharedManager:objectManager];
+    
+    RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"Server" inManagedObjectStore:managedObjectStore];
+    [entityMapping addAttributeMappingsFromDictionary:@{
+                                                        @"id":              @"id",
+                                                        @"ladderPointsAvg": @"avgplpoints",
+                                                        @"maxPlayerCount":  @"maxplayercount",
+                                                        @"playerCount":     @"playercount",
+                                                        @"ladderLimitMax":  @"pointsmax",
+                                                        @"ladderLimitMin":  @"pointsmin",
+                                                        @"description":     @"desc",
+                                                        @"serverName":      @"name",
+                                                        @"owner":           @"owner",
+                                                        @"isOnline":        @"online",
+                                                        @"isPrivate":       @"private"}];
+    entityMapping.identificationAttributes = @[ @"id" ];
+    
+    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:entityMapping method:RKRequestMethodGET pathPattern:@"/servers/" keyPath:nil statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
+    
+    [objectManager addResponseDescriptor:responseDescriptor];
+    
     // Override point for customization after application launch.
-    MKMainViewController *mainController = [[MKMainViewController alloc] initWithNibName:@"MKMainViewController" bundle:nil];
-    self.navController = [[UINavigationController alloc] initWithRootViewController:mainController];
-    self.window.rootViewController = self.navController;
+    MKTabViewController *mainController = [[MKTabViewController alloc] initWithNibName:@"MKTabViewController" bundle:nil];
+    self.window.rootViewController = mainController;
+    
+    UIViewController *acc=[[MKAccViewController alloc] initWithNibName:@"MKAccViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:acc];
+    MKServerMasterViewController *serv = [[MKServerMasterViewController alloc] initWithNibName:@"MKServerMasterViewController" bundle:nil];
+    serv.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
+    UINavigationController *servNav = [[UINavigationController alloc] initWithRootViewController:serv];
+    [self.navController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Accounts" image:nil tag:0]];
+    [servNav setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Servers" image:nil tag:1]];
+    
+    [mainController setViewControllers:@[self.navController, servNav]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    //Clear NSUserDefaults
+    //NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+    //[[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     return YES;
 }
 

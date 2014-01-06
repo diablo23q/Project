@@ -12,7 +12,7 @@
         <attribute name="serverlogin" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="server" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Server" inverseName="players" inverseEntity="Server" syncable="YES"/>
     </entity>
-    <entity name="Server" syncable="YES">
+    <entity name="Server" representedClassName="MKServer" syncable="YES">
         <attribute name="avgplpoints" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>

@@ -23,14 +23,17 @@
 		C3DF525B1876181D00717C9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF523F1876181D00717C9E /* CoreData.framework */; };
 		C3DF52631876181D00717C9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3DF52611876181D00717C9E /* InfoPlist.strings */; };
 		C3DF52651876181D00717C9E /* ManiaPlanetAlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF52641876181D00717C9E /* ManiaPlanetAlertsTests.m */; };
-		C3DF527118762F0700717C9E /* MKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF526F18762F0700717C9E /* MKMainViewController.m */; };
-		C3DF527218762F0700717C9E /* MKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF527018762F0700717C9E /* MKMainViewController.xib */; };
 		C3DF527B187647AD00717C9E /* MKAccViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5279187647AD00717C9E /* MKAccViewController.m */; };
 		C3DF527C187647AD00717C9E /* MKAccViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF527A187647AD00717C9E /* MKAccViewController.xib */; };
 		C3DF52831878C42200717C9E /* MKManiaAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF52811878C42200717C9E /* MKManiaAuthViewController.m */; };
 		C3DF5287187A246D00717C9E /* MKTwitterAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5286187A246D00717C9E /* MKTwitterAuthViewController.m */; };
 		C3DF528C187AF77900717C9E /* MKTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF528A187AF77900717C9E /* MKTabViewController.m */; };
 		C3DF528D187AF77900717C9E /* MKTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF528B187AF77900717C9E /* MKTabViewController.xib */; };
+		C3DF5291187B1AC700717C9E /* MKServerMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF528F187B1AC700717C9E /* MKServerMasterViewController.m */; };
+		C3DF5292187B1AC700717C9E /* MKServerMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF5290187B1AC700717C9E /* MKServerMasterViewController.xib */; };
+		C3DF5296187B261500717C9E /* MKServerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5294187B261500717C9E /* MKServerDetailViewController.m */; };
+		C3DF5297187B261500717C9E /* MKServerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF5295187B261500717C9E /* MKServerDetailViewController.xib */; };
+		C3DF529D187B2B8A00717C9E /* MKServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF529C187B2B8A00717C9E /* MKServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +67,6 @@
 		C3DF52601876181D00717C9E /* ManiaPlanetAlertsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManiaPlanetAlertsTests-Info.plist"; sourceTree = "<group>"; };
 		C3DF52621876181D00717C9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3DF52641876181D00717C9E /* ManiaPlanetAlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManiaPlanetAlertsTests.m; sourceTree = "<group>"; };
-		C3DF526E18762F0700717C9E /* MKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMainViewController.h; sourceTree = "<group>"; };
-		C3DF526F18762F0700717C9E /* MKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMainViewController.m; sourceTree = "<group>"; };
-		C3DF527018762F0700717C9E /* MKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKMainViewController.xib; sourceTree = "<group>"; };
 		C3DF5278187647AD00717C9E /* MKAccViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAccViewController.h; sourceTree = "<group>"; };
 		C3DF5279187647AD00717C9E /* MKAccViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAccViewController.m; sourceTree = "<group>"; };
 		C3DF527A187647AD00717C9E /* MKAccViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKAccViewController.xib; sourceTree = "<group>"; };
@@ -78,6 +78,14 @@
 		C3DF5289187AF77900717C9E /* MKTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabViewController.h; sourceTree = "<group>"; };
 		C3DF528A187AF77900717C9E /* MKTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabViewController.m; sourceTree = "<group>"; };
 		C3DF528B187AF77900717C9E /* MKTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKTabViewController.xib; sourceTree = "<group>"; };
+		C3DF528E187B1AC700717C9E /* MKServerMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKServerMasterViewController.h; sourceTree = "<group>"; };
+		C3DF528F187B1AC700717C9E /* MKServerMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKServerMasterViewController.m; sourceTree = "<group>"; };
+		C3DF5290187B1AC700717C9E /* MKServerMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKServerMasterViewController.xib; sourceTree = "<group>"; };
+		C3DF5293187B261500717C9E /* MKServerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKServerDetailViewController.h; sourceTree = "<group>"; };
+		C3DF5294187B261500717C9E /* MKServerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKServerDetailViewController.m; sourceTree = "<group>"; };
+		C3DF5295187B261500717C9E /* MKServerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKServerDetailViewController.xib; sourceTree = "<group>"; };
+		C3DF529B187B2B8A00717C9E /* MKServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKServer.h; sourceTree = "<group>"; };
+		C3DF529C187B2B8A00717C9E /* MKServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,14 +151,13 @@
 		C3DF52411876181D00717C9E /* ManiaPlanetAlerts */ = {
 			isa = PBXGroup;
 			children = (
+				C3DF529B187B2B8A00717C9E /* MKServer.h */,
+				C3DF529C187B2B8A00717C9E /* MKServer.m */,
 				C3DF524A1876181D00717C9E /* MKAppDelegate.h */,
 				C3DF524B1876181D00717C9E /* MKAppDelegate.m */,
 				C3DF52501876181D00717C9E /* Images.xcassets */,
 				C3DF524D1876181D00717C9E /* ManiaPlanetAlerts.xcdatamodeld */,
 				C3DF52421876181D00717C9E /* Supporting Files */,
-				C3DF526E18762F0700717C9E /* MKMainViewController.h */,
-				C3DF526F18762F0700717C9E /* MKMainViewController.m */,
-				C3DF527018762F0700717C9E /* MKMainViewController.xib */,
 				C3DF5278187647AD00717C9E /* MKAccViewController.h */,
 				C3DF5279187647AD00717C9E /* MKAccViewController.m */,
 				C3DF527A187647AD00717C9E /* MKAccViewController.xib */,
@@ -162,6 +169,12 @@
 				C3DF5289187AF77900717C9E /* MKTabViewController.h */,
 				C3DF528A187AF77900717C9E /* MKTabViewController.m */,
 				C3DF528B187AF77900717C9E /* MKTabViewController.xib */,
+				C3DF528E187B1AC700717C9E /* MKServerMasterViewController.h */,
+				C3DF528F187B1AC700717C9E /* MKServerMasterViewController.m */,
+				C3DF5290187B1AC700717C9E /* MKServerMasterViewController.xib */,
+				C3DF5293187B261500717C9E /* MKServerDetailViewController.h */,
+				C3DF5294187B261500717C9E /* MKServerDetailViewController.m */,
+				C3DF5295187B261500717C9E /* MKServerDetailViewController.xib */,
 			);
 			path = ManiaPlanetAlerts;
 			sourceTree = "<group>";
@@ -273,9 +286,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3DF527218762F0700717C9E /* MKMainViewController.xib in Resources */,
+				C3DF5297187B261500717C9E /* MKServerDetailViewController.xib in Resources */,
 				C3DF52461876181D00717C9E /* InfoPlist.strings in Resources */,
 				C3DF52511876181D00717C9E /* Images.xcassets in Resources */,
+				C3DF5292187B1AC700717C9E /* MKServerMasterViewController.xib in Resources */,
 				C3DF528D187AF77900717C9E /* MKTabViewController.xib in Resources */,
 				C3DF527C187647AD00717C9E /* MKAccViewController.xib in Resources */,
 			);
@@ -329,11 +343,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DF5296187B261500717C9E /* MKServerDetailViewController.m in Sources */,
 				C3DF52831878C42200717C9E /* MKManiaAuthViewController.m in Sources */,
 				C3DF524C1876181D00717C9E /* MKAppDelegate.m in Sources */,
-				C3DF527118762F0700717C9E /* MKMainViewController.m in Sources */,
 				C3DF52481876181D00717C9E /* main.m in Sources */,
+				C3DF5291187B1AC700717C9E /* MKServerMasterViewController.m in Sources */,
 				C3DF5287187A246D00717C9E /* MKTwitterAuthViewController.m in Sources */,
+				C3DF529D187B2B8A00717C9E /* MKServer.m in Sources */,
 				C3DF527B187647AD00717C9E /* MKAccViewController.m in Sources */,
 				C3DF528C187AF77900717C9E /* MKTabViewController.m in Sources */,
 				C3DF524F1876181D00717C9E /* ManiaPlanetAlerts.xcdatamodeld in Sources */,
