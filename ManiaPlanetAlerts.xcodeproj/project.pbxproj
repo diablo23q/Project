@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77B5AD5498CB46B5B5BCE8EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6805A2C14AEC4A4FBBABB44B /* libPods.a */; };
 		C3DF523A1876181D00717C9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF52391876181D00717C9E /* Foundation.framework */; };
 		C3DF523C1876181D00717C9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF523B1876181D00717C9E /* CoreGraphics.framework */; };
 		C3DF523E1876181D00717C9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF523D1876181D00717C9E /* UIKit.framework */; };
@@ -22,6 +23,14 @@
 		C3DF525B1876181D00717C9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF523F1876181D00717C9E /* CoreData.framework */; };
 		C3DF52631876181D00717C9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3DF52611876181D00717C9E /* InfoPlist.strings */; };
 		C3DF52651876181D00717C9E /* ManiaPlanetAlertsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF52641876181D00717C9E /* ManiaPlanetAlertsTests.m */; };
+		C3DF527118762F0700717C9E /* MKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF526F18762F0700717C9E /* MKMainViewController.m */; };
+		C3DF527218762F0700717C9E /* MKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF527018762F0700717C9E /* MKMainViewController.xib */; };
+		C3DF527B187647AD00717C9E /* MKAccViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5279187647AD00717C9E /* MKAccViewController.m */; };
+		C3DF527C187647AD00717C9E /* MKAccViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF527A187647AD00717C9E /* MKAccViewController.xib */; };
+		C3DF52831878C42200717C9E /* MKManiaAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF52811878C42200717C9E /* MKManiaAuthViewController.m */; };
+		C3DF5287187A246D00717C9E /* MKTwitterAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5286187A246D00717C9E /* MKTwitterAuthViewController.m */; };
+		C3DF528C187AF77900717C9E /* MKTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF528A187AF77900717C9E /* MKTabViewController.m */; };
+		C3DF528D187AF77900717C9E /* MKTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF528B187AF77900717C9E /* MKTabViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6805A2C14AEC4A4FBBABB44B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1115BBF451409DBDD12B20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C3DF52361876181D00717C9E /* ManiaPlanetAlerts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManiaPlanetAlerts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DF52391876181D00717C9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3DF523B1876181D00717C9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +64,20 @@
 		C3DF52601876181D00717C9E /* ManiaPlanetAlertsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManiaPlanetAlertsTests-Info.plist"; sourceTree = "<group>"; };
 		C3DF52621876181D00717C9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3DF52641876181D00717C9E /* ManiaPlanetAlertsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManiaPlanetAlertsTests.m; sourceTree = "<group>"; };
+		C3DF526E18762F0700717C9E /* MKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKMainViewController.h; sourceTree = "<group>"; };
+		C3DF526F18762F0700717C9E /* MKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKMainViewController.m; sourceTree = "<group>"; };
+		C3DF527018762F0700717C9E /* MKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKMainViewController.xib; sourceTree = "<group>"; };
+		C3DF5278187647AD00717C9E /* MKAccViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAccViewController.h; sourceTree = "<group>"; };
+		C3DF5279187647AD00717C9E /* MKAccViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAccViewController.m; sourceTree = "<group>"; };
+		C3DF527A187647AD00717C9E /* MKAccViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKAccViewController.xib; sourceTree = "<group>"; };
+		C3DF52801878C42200717C9E /* MKManiaAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKManiaAuthViewController.h; sourceTree = "<group>"; };
+		C3DF52811878C42200717C9E /* MKManiaAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKManiaAuthViewController.m; sourceTree = "<group>"; };
+		C3DF5285187A246D00717C9E /* MKTwitterAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTwitterAuthViewController.h; sourceTree = "<group>"; };
+		C3DF5286187A246D00717C9E /* MKTwitterAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTwitterAuthViewController.m; sourceTree = "<group>"; };
+		C3DF5288187A2EEA00717C9E /* MKAuthProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAuthProtocol.h; sourceTree = "<group>"; };
+		C3DF5289187AF77900717C9E /* MKTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTabViewController.h; sourceTree = "<group>"; };
+		C3DF528A187AF77900717C9E /* MKTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTabViewController.m; sourceTree = "<group>"; };
+		C3DF528B187AF77900717C9E /* MKTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKTabViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +89,7 @@
 				C3DF52401876181D00717C9E /* CoreData.framework in Frameworks */,
 				C3DF523E1876181D00717C9E /* UIKit.framework in Frameworks */,
 				C3DF523A1876181D00717C9E /* Foundation.framework in Frameworks */,
+				77B5AD5498CB46B5B5BCE8EA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +114,7 @@
 				C3DF525E1876181D00717C9E /* ManiaPlanetAlertsTests */,
 				C3DF52381876181D00717C9E /* Frameworks */,
 				C3DF52371876181D00717C9E /* Products */,
+				BB1115BBF451409DBDD12B20 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +135,7 @@
 				C3DF523D1876181D00717C9E /* UIKit.framework */,
 				C3DF523F1876181D00717C9E /* CoreData.framework */,
 				C3DF52571876181D00717C9E /* XCTest.framework */,
+				6805A2C14AEC4A4FBBABB44B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +148,20 @@
 				C3DF52501876181D00717C9E /* Images.xcassets */,
 				C3DF524D1876181D00717C9E /* ManiaPlanetAlerts.xcdatamodeld */,
 				C3DF52421876181D00717C9E /* Supporting Files */,
+				C3DF526E18762F0700717C9E /* MKMainViewController.h */,
+				C3DF526F18762F0700717C9E /* MKMainViewController.m */,
+				C3DF527018762F0700717C9E /* MKMainViewController.xib */,
+				C3DF5278187647AD00717C9E /* MKAccViewController.h */,
+				C3DF5279187647AD00717C9E /* MKAccViewController.m */,
+				C3DF527A187647AD00717C9E /* MKAccViewController.xib */,
+				C3DF52801878C42200717C9E /* MKManiaAuthViewController.h */,
+				C3DF52811878C42200717C9E /* MKManiaAuthViewController.m */,
+				C3DF5285187A246D00717C9E /* MKTwitterAuthViewController.h */,
+				C3DF5286187A246D00717C9E /* MKTwitterAuthViewController.m */,
+				C3DF5288187A2EEA00717C9E /* MKAuthProtocol.h */,
+				C3DF5289187AF77900717C9E /* MKTabViewController.h */,
+				C3DF528A187AF77900717C9E /* MKTabViewController.m */,
+				C3DF528B187AF77900717C9E /* MKTabViewController.xib */,
 			);
 			path = ManiaPlanetAlerts;
 			sourceTree = "<group>";
@@ -160,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3DF52681876181D00717C9E /* Build configuration list for PBXNativeTarget "ManiaPlanetAlerts" */;
 			buildPhases = (
+				172C68560F4342678B198A7E /* Check Pods Manifest.lock */,
 				C3DF52321876181D00717C9E /* Sources */,
 				C3DF52331876181D00717C9E /* Frameworks */,
 				C3DF52341876181D00717C9E /* Resources */,
+				88649FAEA6D74C57A91BE58C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,8 +273,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DF527218762F0700717C9E /* MKMainViewController.xib in Resources */,
 				C3DF52461876181D00717C9E /* InfoPlist.strings in Resources */,
 				C3DF52511876181D00717C9E /* Images.xcassets in Resources */,
+				C3DF528D187AF77900717C9E /* MKTabViewController.xib in Resources */,
+				C3DF527C187647AD00717C9E /* MKAccViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,13 +291,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		172C68560F4342678B198A7E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88649FAEA6D74C57A91BE58C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3DF52321876181D00717C9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DF52831878C42200717C9E /* MKManiaAuthViewController.m in Sources */,
 				C3DF524C1876181D00717C9E /* MKAppDelegate.m in Sources */,
+				C3DF527118762F0700717C9E /* MKMainViewController.m in Sources */,
 				C3DF52481876181D00717C9E /* main.m in Sources */,
+				C3DF5287187A246D00717C9E /* MKTwitterAuthViewController.m in Sources */,
+				C3DF527B187647AD00717C9E /* MKAccViewController.m in Sources */,
+				C3DF528C187AF77900717C9E /* MKTabViewController.m in Sources */,
 				C3DF524F1876181D00717C9E /* ManiaPlanetAlerts.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +454,7 @@
 		};
 		C3DF52691876181D00717C9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1115BBF451409DBDD12B20 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -382,6 +468,7 @@
 		};
 		C3DF526A1876181D00717C9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1115BBF451409DBDD12B20 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -454,6 +541,7 @@
 				C3DF526A1876181D00717C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3DF526B1876181D00717C9E /* Build configuration list for PBXNativeTarget "ManiaPlanetAlertsTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +550,7 @@
 				C3DF526D1876181D00717C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
