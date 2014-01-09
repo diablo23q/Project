@@ -7,6 +7,7 @@
 //
 
 #import "MKServer.h"
+#import "NSString+MKFormat.h"
 
 
 @implementation MKServer
@@ -27,9 +28,10 @@
 @dynamic szone;
 @dynamic players;
 
-- (NSString *)titleText
+
+- (NSAttributedString *)titleText
 {
-    return self.name;
+    return [self.name colorizeManiaString];
 }
 
 - (NSString *)subtitleText

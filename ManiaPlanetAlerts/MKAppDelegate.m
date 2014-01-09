@@ -9,7 +9,7 @@
 #import "MKAppDelegate.h"
 #import "MKTabViewController.h"
 #import "MKAccViewController.h"
-#import "MKServerMasterViewController.h"
+#import "MKServerLocationViewController.h"
 
 @implementation MKAppDelegate
 
@@ -33,7 +33,6 @@
     
     // Set the default store shared instance
     [RKManagedObjectStore setDefaultStore:managedObjectStore];
-    
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"https://ws.maniaplanet.com"]];
     objectManager.managedObjectStore = managedObjectStore;
     [objectManager.HTTPClient setAuthorizationHeaderWithUsername:@"diablohorse|diablo23q" password:@"msuobjc"];
@@ -65,7 +64,7 @@
     
     UIViewController *acc=[[MKAccViewController alloc] initWithNibName:@"MKAccViewController" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:acc];
-    MKServerMasterViewController *serv = [[MKServerMasterViewController alloc] initWithNibName:@"MKServerMasterViewController" bundle:nil];
+    MKServerLocationViewController *serv = [[MKServerLocationViewController alloc] initWithNibName:@"MKServerLocationViewController" bundle:nil];
     serv.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
     UINavigationController *servNav = [[UINavigationController alloc] initWithRootViewController:serv];
     [self.navController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Accounts" image:nil tag:0]];

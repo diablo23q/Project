@@ -34,6 +34,9 @@
 		C3DF5296187B261500717C9E /* MKServerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF5294187B261500717C9E /* MKServerDetailViewController.m */; };
 		C3DF5297187B261500717C9E /* MKServerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF5295187B261500717C9E /* MKServerDetailViewController.xib */; };
 		C3DF529D187B2B8A00717C9E /* MKServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF529C187B2B8A00717C9E /* MKServer.m */; };
+		C3DF52A0187F093D00717C9E /* NSString+MKFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF529F187F093D00717C9E /* NSString+MKFormat.m */; };
+		C3DF52A4187F158600717C9E /* MKServerLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DF52A2187F158600717C9E /* MKServerLocationViewController.m */; };
+		C3DF52A5187F158600717C9E /* MKServerLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF52A3187F158600717C9E /* MKServerLocationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,11 @@
 		C3DF5295187B261500717C9E /* MKServerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKServerDetailViewController.xib; sourceTree = "<group>"; };
 		C3DF529B187B2B8A00717C9E /* MKServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKServer.h; sourceTree = "<group>"; };
 		C3DF529C187B2B8A00717C9E /* MKServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKServer.m; sourceTree = "<group>"; };
+		C3DF529E187F093D00717C9E /* NSString+MKFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKFormat.h"; sourceTree = "<group>"; };
+		C3DF529F187F093D00717C9E /* NSString+MKFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKFormat.m"; sourceTree = "<group>"; };
+		C3DF52A1187F158600717C9E /* MKServerLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKServerLocationViewController.h; sourceTree = "<group>"; };
+		C3DF52A2187F158600717C9E /* MKServerLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKServerLocationViewController.m; sourceTree = "<group>"; };
+		C3DF52A3187F158600717C9E /* MKServerLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKServerLocationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,11 @@
 				C3DF5293187B261500717C9E /* MKServerDetailViewController.h */,
 				C3DF5294187B261500717C9E /* MKServerDetailViewController.m */,
 				C3DF5295187B261500717C9E /* MKServerDetailViewController.xib */,
+				C3DF529E187F093D00717C9E /* NSString+MKFormat.h */,
+				C3DF529F187F093D00717C9E /* NSString+MKFormat.m */,
+				C3DF52A1187F158600717C9E /* MKServerLocationViewController.h */,
+				C3DF52A2187F158600717C9E /* MKServerLocationViewController.m */,
+				C3DF52A3187F158600717C9E /* MKServerLocationViewController.xib */,
 			);
 			path = ManiaPlanetAlerts;
 			sourceTree = "<group>";
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3DF5297187B261500717C9E /* MKServerDetailViewController.xib in Resources */,
+				C3DF52A5187F158600717C9E /* MKServerLocationViewController.xib in Resources */,
 				C3DF52461876181D00717C9E /* InfoPlist.strings in Resources */,
 				C3DF52511876181D00717C9E /* Images.xcassets in Resources */,
 				C3DF5292187B1AC700717C9E /* MKServerMasterViewController.xib in Resources */,
@@ -347,12 +361,14 @@
 				C3DF52831878C42200717C9E /* MKManiaAuthViewController.m in Sources */,
 				C3DF524C1876181D00717C9E /* MKAppDelegate.m in Sources */,
 				C3DF52481876181D00717C9E /* main.m in Sources */,
+				C3DF52A4187F158600717C9E /* MKServerLocationViewController.m in Sources */,
 				C3DF5291187B1AC700717C9E /* MKServerMasterViewController.m in Sources */,
 				C3DF5287187A246D00717C9E /* MKTwitterAuthViewController.m in Sources */,
 				C3DF529D187B2B8A00717C9E /* MKServer.m in Sources */,
 				C3DF527B187647AD00717C9E /* MKAccViewController.m in Sources */,
 				C3DF528C187AF77900717C9E /* MKTabViewController.m in Sources */,
 				C3DF524F1876181D00717C9E /* ManiaPlanetAlerts.xcdatamodeld in Sources */,
+				C3DF52A0187F093D00717C9E /* NSString+MKFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

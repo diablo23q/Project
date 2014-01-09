@@ -28,7 +28,7 @@
 @property (nonatomic, retain) NSManagedObject *szone;
 @property (nonatomic, retain) NSSet *players;
 
-@property (nonatomic, readonly) NSString *titleText;
+@property (nonatomic, readonly) NSMutableAttributedString *titleText;
 @property (nonatomic, readonly) NSString *subtitleText;
 @end
 

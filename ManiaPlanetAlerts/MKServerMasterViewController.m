@@ -34,7 +34,7 @@
 
 - (void)loadServers
 {
-    [[RKObjectManager sharedManager] getObjectsAtPath:@"/servers/" parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"/servers/" parameters:@{@"length":@100, @"title":self.gameTitle} success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         [self.refreshControl endRefreshing];
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         [self.refreshControl endRefreshing];
@@ -110,7 +110,7 @@
     MKServerDetailViewController *detailViewController = [[MKServerDetailViewController alloc] initWithNibName:@"MKServerDetailViewController" bundle:nil];
 
     // Pass the selected object to the new view controller.
-    
+    detailViewController.serv = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // Push the view controller.
     [self.navigationController pushViewController:detailViewController animated:YES];
@@ -199,7 +199,8 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     MKServer *serv = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = serv.titleText;
+    [cell.contentView setBackgroundColor:[UIColor lightGrayColor]];
+    cell.textLabel.attributedText = serv.titleText;
     cell.detailTextLabel.text = serv.subtitleText;
 }
 
