@@ -67,8 +67,11 @@
     MKServerLocationViewController *serv = [[MKServerLocationViewController alloc] initWithNibName:@"MKServerLocationViewController" bundle:nil];
     serv.managedObjectContext = managedObjectStore.mainQueueManagedObjectContext;
     UINavigationController *servNav = [[UINavigationController alloc] initWithRootViewController:serv];
+    servNav.navigationBar.translucent = NO;
+    self.navController.navigationBar.translucent = NO;
+    mainController.tabBar.translucent = NO;
     [self.navController setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Accounts" image:nil tag:0]];
-    [servNav setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Servers" image:nil tag:1]];
+    [servNav setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Titles" image:nil tag:1]];
     
     [mainController setViewControllers:@[self.navController, servNav]];
     

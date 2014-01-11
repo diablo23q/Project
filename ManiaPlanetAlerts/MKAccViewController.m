@@ -28,6 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Accounts";
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     if([defaults stringForKey:@"ManiaAccessToken"] != nil) {
         [self.maniaButton setTitle:@"ManiaPlanet (Authorized)" forState:UIControlStateNormal];

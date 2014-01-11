@@ -16,8 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGL-SK-BfZ">
-                    <rect key="frame" x="0.0" y="100" width="320" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGL-SK-BfZ">
+                    <rect key="frame" x="92" y="0.0" width="137" height="190"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="ManiaPlanet">
@@ -27,8 +27,8 @@
                         <action selector="maniaAuth:" destination="-1" eventType="touchUpInside" id="bpi-ej-6jO"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-1p-n8l">
-                    <rect key="frame" x="0.0" y="183" width="320" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-1p-n8l">
+                    <rect key="frame" x="124" y="190" width="73" height="189"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="Twitter">
@@ -38,8 +38,8 @@
                         <action selector="twitterAuth:" destination="-1" eventType="touchUpInside" id="qQ4-SX-bOH"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-E3-YIs">
-                    <rect key="frame" x="0.0" y="267" width="320" height="50"/>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-E3-YIs">
+                    <rect key="frame" x="105" y="379" width="110" height="189"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="Facebook">
@@ -48,6 +48,17 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hbd-1p-n8l" firstAttribute="top" secondItem="LGL-SK-BfZ" secondAttribute="bottom" id="5UC-jV-HHM"/>
+                <constraint firstItem="DJh-E3-YIs" firstAttribute="height" secondItem="hbd-1p-n8l" secondAttribute="height" id="ARK-ds-wHg"/>
+                <constraint firstItem="LGL-SK-BfZ" firstAttribute="height" secondItem="hbd-1p-n8l" secondAttribute="height" id="Bpz-V2-6ai"/>
+                <constraint firstAttribute="centerX" secondItem="LGL-SK-BfZ" secondAttribute="centerX" id="Lws-Tj-Ssi"/>
+                <constraint firstAttribute="bottom" secondItem="DJh-E3-YIs" secondAttribute="bottom" id="e2A-0q-Oc8"/>
+                <constraint firstItem="DJh-E3-YIs" firstAttribute="top" secondItem="hbd-1p-n8l" secondAttribute="bottom" id="i3A-Ol-G1U"/>
+                <constraint firstItem="LGL-SK-BfZ" firstAttribute="top" secondItem="1" secondAttribute="top" id="mC1-5G-sVh"/>
+                <constraint firstAttribute="centerX" secondItem="DJh-E3-YIs" secondAttribute="centerX" id="r8P-gm-EgD"/>
+                <constraint firstAttribute="centerX" secondItem="hbd-1p-n8l" secondAttribute="centerX" id="tHa-5z-kqb"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

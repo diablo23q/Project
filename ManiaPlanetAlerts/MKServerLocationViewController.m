@@ -30,6 +30,7 @@
     [super viewDidLoad];
     self.titles = @[@"ShootMania Storm", @"ShootMania Royal", @"ShootMania Elite", @"TrackMania Canyon", @"TrackMania Stadium", @"TrackMania Valley"];
     self.subtitles = @[@"SMStorm", @"SMStormRoyal@nadeolabs", @"SMStormElite@nadeolabs", @"TMCanyon", @"TMStadium", @"TMValley"];
+    self.title = @"Titles";
 }
 
 - (void)didReceiveMemoryWarning
